@@ -1,33 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>About Eloheh</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #fefefe;
+      font-family: Georgia, serif;
+      background-color: #f9f9f9;
       color: #333;
       padding: 2em;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
     }
     h1, h2 {
-      color: #00796b;
+      color: #00695c;
+      font-family: 'Arial Black', sans-serif;
     }
-    ul {
-      line-height: 1.6;
+    .highlight {
+      color: #d32f2f;
+    }
+    .note {
+      color: #1976d2;
+      font-style: italic;
+    }
+    ul, ol {
+      margin-left: 1.5em;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 1em 0;
+    }
+    footer {
+      margin-top: 2em;
+      font-size: 0.9em;
+      color: #666;
     }
   </style>
 </head>
 <body>
-  <h1>About Eloheh</h1>
-  <p>Welcome to <strong>Eloheh</strong>, a reputable brand in creative and caring medical care. By providing individualized care and high-quality medical supplies, we are dedicated to enhancing the health of both individuals and communities.</p>
-  <p>Our goal is to advance holistic health solutions by fusing the strength of preventive care, sustainability, and accessibility with contemporary medical advancements.</p>
+  <h1>About <u><span class="highlight">Eloheh</span></u></h1>
+  <p><strong>Welcome</strong> to <span class="note">Eloheh</span>, a reputable brand in <em>creative</em> and <u>caring</u> medical care. We offer individualized support and high-quality medical supplies to promote wellness in both <span style="font-size: 18px; color: green;">individuals</span> and communities.</p>
+  <p><strong>Our goal</strong> is to advance <em>holistic</em> health solutions by merging <span style="font-size: 16px; color: purple;">preventive care</span> and modern medical innovations.</p>
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Healthcare_icon.svg/2048px-Healthcare_icon.svg.png" alt="Eloheh Healthcare Icon" />
 
   <h2>Our Story</h2>
-  <p>Eloheh was founded on the belief that health is not just the absence of illness but a state of physical, mental, and spiritual well-being. Inspired by the meaning of "Eloheh"—a word rooted in harmony and wholeness—we embarked on a journey to create a company where care comes first.</p>
-  <p>Starting as a small team of passionate healthcare professionals and community advocates, Eloheh launched with just a handful of wellness products and mobile health services in underserved areas. Today, we’ve grown into a full-spectrum provider, offering:</p>
+  <p>Eloheh was founded on the belief that <u>health</u> is not just the absence of illness, but a state of physical, mental, and spiritual well-being. Inspired by the meaning of "Eloheh"—a word rooted in harmony and wholeness—we started a journey to create a company where care comes first.</p>
+
+  <p>We started as a small team with big dreams. Now we offer:</p>
   <ul>
     <li>Natural and sustainable health products</li>
     <li>Telemedicine and in-person consultations</li>
@@ -36,13 +57,27 @@
   </ul>
 
   <h2>Our History</h2>
-  <ul>
-    <li><strong>2018</strong> – Founded Eloheh with a mission of delivering community-focused, whole-person care</li>
-    <li><strong>2019</strong> – Launching our first product line: natural herbal health products</li>
-    <li><strong>2020</strong> – Expansion into telehealth and mobile clinics at the height of the COVID-19 pandemic</li>
-    <li><strong>2022</strong> – Launched Eloheh Health Hub app, which brought thousands to virtual health care</li>
-    <li><strong>2024</strong> – Opened Chicago, IL flagship well-being center</li>
-    <li><strong>Today</strong> – Caring for thousands of patients nationwide with holistic health services</li>
-  </ul>
+  <ol>
+    <li><strong>2018</strong> – Founded with a mission of whole-person care</li>
+    <li><strong>2019</strong> – Launched natural herbal product line</li>
+    <li><strong>2020</strong> – Expanded into telehealth during COVID-19</li>
+    <li><strong>2022</strong> – Released Eloheh Health Hub app</li>
+    <li><strong>2024</strong> – Opened Chicago flagship wellness center</li>
+    <li><strong>Today</strong> – Serving thousands across the nation</li>
+  </ol>
+
+  <p>Visit our partner for <a href="https://www.who.int" target="_blank">global health resources</a>.</p>
+
+  <p><a href="mailto:eloheh@example.com">Contact me</a> to learn more or ask questions.</p>
+
+  <p><a href="company-brochure.pdf" download>Download our company brochure (PDF)</a></p>
+
+  <footer>
+    <p id="lastModified"></p>
+    <script>
+      document.getElementById("lastModified").innerText =
+        "Last modified: " + document.lastModified;
+    </script>
+  </footer>
 </body>
 </html>
