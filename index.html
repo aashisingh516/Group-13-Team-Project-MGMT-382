@@ -5,48 +5,55 @@
   <title>About Eloheh</title>
   <style>
     body {
-      font-family: Georgia, sans-serif;
+      font-family: 'Verdana', sans-serif;
+      color: #333333;
       background-color: #f9f9f9;
-      color: #333;
-      padding: 2em;
+      margin: 20px;
     }
-    h1 {
-      color: darkgreen;
+    h1, h2 {
+      font-family: 'Georgia', serif;
+      color: #2a4d69;
     }
     .highlight {
-      font-style: italic;
-      font-weight: bold;
-      color: #006699;
+      color: #1e8449; /* green */
       font-size: 18px;
+      font-style: italic;
     }
-    .section-title {
+    .important {
+      font-weight: bold;
       text-decoration: underline;
-      font-size: 20px;
-      font-family: Arial, sans-serif;
+      font-size: 14px;
+      color: #c0392b; /* red */
     }
     img {
-      width: 100%;
-      max-width: 600px;
+      width: 300px;
+      height: auto;
       border-radius: 8px;
-      margin: 20px 0;
+      margin-top: 10px;
+    }
+    .footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #666;
     }
   </style>
 </head>
 <body>
 
-  <h1>About Eloheh</h1>
+  <h1>Welcome to Eloheh</h1>
 
-  <p class="highlight">Welcome to <b>Eloheh</b>, a reputable brand in creative and caring medical care.</p>
-  <p>By providing <i>individualized care</i> and high-quality medical supplies, we are dedicated to enhancing the health of both individuals and communities.</p>
+  <p><span class="highlight">Eloheh</span> is a <span class="important">reputable brand</span> in creative and caring medical care. By providing individualized care and high-quality medical supplies, we are dedicated to enhancing the health of both individuals and communities.</p>
 
-  <!-- Working healthcare image -->
-<img src="https://cdn.pixabay.com/photo/2016/03/31/19/57/doctor-1295557_960_720.png" alt="Friendly healthcare provider cartoon" />
+  <p>Our goal is to advance <em>holistic health solutions</em> by fusing the strength of <strong>preventive care</strong>, sustainability, and accessibility with contemporary medical advancements.</p>
 
-  <p>Our goal is to advance holistic health solutions by combining <span style="color: darkred;">preventive care</span>, <span style="color: darkblue;">sustainability</span>, and accessibility with contemporary medical advancements.</p>
+  <h2>Our Story</h2>
+  <p><strong>Eloheh</strong> was founded on the belief that health is not just the absence of illness but a state of <u>physical, mental, and spiritual well-being</u>.</p>
 
-  <h2 class="section-title">Our Story</h2>
-  <p>Eloheh was founded on the belief that <b>health</b> is not just the absence of illness but a state of <em>physical</em>, <em>mental</em>, and <em>spiritual</em> well-being.</p>
+  <p>Inspired by the meaning of "Eloheh"—a word rooted in harmony and wholeness—we embarked on a journey to create a company where <em>care comes first</em>.</p>
 
+  <p>We began as a small team of passionate healthcare professionals. Today, we offer:</p>
+
+  <!-- Unordered list -->
   <ul>
     <li>Natural and sustainable health products</li>
     <li>Telemedicine and in-person consultations</li>
@@ -54,36 +61,46 @@
     <li>Community-based wellness initiatives</li>
   </ul>
 
-  <h2 class="section-title">Our History</h2>
+  <h2>Our History</h2>
+
+  <!-- Ordered list -->
   <ol>
     <li>2018 – Founded Eloheh with a mission of delivering community-focused care</li>
-    <li>2019 – Launched natural herbal product line</li>
+    <li>2019 – Launched our first product line: natural herbal health products</li>
     <li>2020 – Expanded into telehealth and mobile clinics</li>
-    <li>2022 – Launched Eloheh Health Hub app</li>
-    <li>2024 – Opened Chicago flagship wellness center</li>
+    <li>2022 – Released the Eloheh Health Hub App</li>
+    <li>2024 – Opened Chicago, IL flagship well-being center</li>
   </ol>
 
-  <!-- Downloadable Patient Education Guide -->
- <p>
-  📎 <a href="https://www.chcs.org/media/Managing-Chronic-Conditions-Tool.pdf" target="_blank">Download our Patient Education Guide (PDF)</a>
-</p>
+  <!-- Image -->
+  <img src="https://cdn.pixabay.com/photo/2017/01/31/21/22/stethoscope-2024468_1280.png" alt="Healthcare Services">
 
-  <!-- External Hyperlink -->
+  <!-- External link to a PDF -->
   <p>
-  📎 <a href="https://www.chcs.org/media/Managing-Chronic-Conditions-Tool.pdf" 
-        target="_blank" 
-        rel="noopener noreferrer">
-    Download our Patient Education Guide (PDF)
-  </a>
-</p>
+    📎 <a href="https://www.chcs.org/media/Managing-Chronic-Conditions-Tool.pdf" 
+          target="_blank" 
+          rel="noopener noreferrer">
+      Download our Patient Education Guide (PDF)
+    </a>
+  </p>
 
-  <!-- Contact Me Email Link -->
+  <!-- External site link -->
+  <p>
+    🌐 Visit the <a href="https://www.cdc.gov/" target="_blank" rel="noopener noreferrer">CDC Website</a> for more healthcare information.
+  </p>
+
+  <!-- Contact link -->
   <p>
     📧 <a href="mailto:sing1581@purdue.edu">Contact Aashi Singh</a>
   </p>
 
-  <!-- Auto-Updating Last Modified Date -->
-  <p><small>Last modified: <script>document.write(new Date().toLocaleDateString());</script></small></p>
+  <!-- Footer with automatic last modified date -->
+  <div class="footer">
+    <script>
+      const modified = new Date(document.lastModified);
+      document.write("📅 Last Modified: " + modified.toDateString());
+    </script>
+  </div>
 
 </body>
 </html>
